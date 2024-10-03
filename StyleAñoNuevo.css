@@ -1,1 +1,82 @@
 
+body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+        color: orange;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+    }
+
+.company-name {
+        font-size: 2em;
+        margin-bottom: 20px;
+        background-color: red;
+    }
+
+.animated-text {
+        font-size: 3em;
+        opacity: 0;
+        transform: translateY(-100%);
+        background-color: red;
+        animation: moveIn 2s forwards;
+    }
+
+    @keyframes moveIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        50% {
+            opacity: 1;
+            transform: translateY(30%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+.buttons {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        margin: 180px;
+    }
+
+button {
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        color: orange;
+        transition: background-color 0.3s;
+        margin: 40px;
+        text-align: end;
+    }
+
+.mensaje {
+        position: absolute;
+        margin: 320px;
+        background-color: red;
+    }
+.buttons {
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    margin: 40px;
+    cursor: pointer;
+}
+.company-name{
+  border: none;
+  padding: 10px;
+  margin: 30px;
+  cursor: pointer;
+}
